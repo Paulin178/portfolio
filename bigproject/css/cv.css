@@ -1,0 +1,141 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Navbar*/
+:root {
+  --blue : #12d2db;
+  --white : #ffffff;
+  --purple-blc : #230622dd;
+  --shadow : 0 5px 10px 5px rgba(0, 0, 0, .3);
+  --navColor : linear-gradient(to right, rgba(6, 203, 167, 0.6)5%, rgba(0, 0, 0, 0.9));
+}
+
+.containt{
+  color: white;
+  font-weight: 800;
+  font-style: italic;
+}
+
+
+.containt2{
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+}
+* {
+  padding: 0;
+  margin-bottom: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+nav {
+  position: absolute;
+  background: var(--navColor);
+  box-shadow: var(--shadow);
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: var(--white);
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0 80px;
+  letter-spacing: -1px;
+  font-weight: 800;
+  font-style: italic;
+  transition: .2s ease;
+  text-shadow: 3px 5px 20px #230622aa;
+}
+nav ul {
+  float: right;
+  margin-right: 80px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 65px;
+}
+nav ul li a {
+  color: var(--white);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 13px;
+  text-transform: lowercase;
+}
+a.active, a:hover {
+  background: var(--purple);
+  transition: .5s;
+}
+.checkbtn {
+  line-height: 80px;
+  font-size: 30px;
+  float: right;
+  cursor: pointer;
+  margin-right: 40px;
+  display: none;
+}
+.checkbtn i {
+  color: var(--white);
+  padding: 5px;
+  border-radius: 10px;
+  transition: .5s ease;
+}
+.checkbtn i:hover {
+  background: var(--purple);
+}
+#check {
+  display: none;
+}
+/*fin de barre nav*/
+
+.cv{
+  width : 45%;
+  height: auto;
+  margin-left: 500px;
+  
+}
+
+/*Texte animé*/
+
+.content{
+  max-width: 800px;
+  padding:30px;
+}
+#text{
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+#text:after{
+  content: "";
+  animation: clignote 0.7s infinite linear;
+  width: 2px;
+  height: 3rem;
+  display: inline-block;
+  background: rgb(14, 15, 22);;
+}
+@keyframes clignote {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
